@@ -1,9 +1,9 @@
 include_recipe "build-essential"
 
 case node.platform_family
-when 'debian'
+when "debian"
   prereqs = %w(automake pkg-config zlib1g-dev libpcre3-dev)
-when 'rhel'
+when "rhel"
   prereqs = %w(automake pkgconfig zlib zlib-devel pcre pcre-devel)
 else
   Chef::Log.warn "Don't know prereqs for #{node.platform_family}; proceeding anyway"
@@ -15,34 +15,20 @@ prereqs.each do |pkg|
   end
 end
 
-directory "/usr/local/src" do
-  action :create
-end
+cache = "the_silver_searcher-#{node.the_silver_searcher.version}"
 
-remote_file "/usr/local/src/the_silver_searcher-#{node.the_silver_searcher.version}.tar.gz" do
-  action :create
+remote_file "#{Chef::Config['file_cache_path']}/#{cache}.tar.gz" do
   source "https://github.com/ggreer/the_silver_searcher/archive/#{node.the_silver_searcher.version}.tar.gz"
-  mode 00644
   checksum node.the_silver_searcher.checksum
+  notifies :run, "bash[install the_silver_searcher]", :immediately
 end
 
-execute "untar the_silver_searcher" do
-  action :run
-  cwd "/usr/local/src"
-  command "tar xfvz the_silver_searcher-#{node.the_silver_searcher.version}.tar.gz"
-  creates "/usr/local/src/the_silver_searcher-#{node.the_silver_searcher.version}/build.sh"
-end
-
-execute "build the_silver_searcher" do
-  action :run
-  cwd "/usr/local/src/the_silver_searcher-#{node.the_silver_searcher.version}"
-  command "./build.sh"
-  creates "/usr/local/src/the_silver_searcher-#{node.the_silver_searcher.version}/ag"
-end
-
-execute "install the_silver_searcher" do
-  action :run
-  cwd "/usr/local/src/the_silver_searcher-#{node.the_silver_searcher.version}"
-  command "make install"
-  creates "/usr/local/bin/ag"
+bash "install the_silver_searcher" do
+  user "root"
+  cwd Chef::Config['file_cache_path']
+  code <<-EOH
+      tar -zxf #{cache}.tar.gz
+      (cd #{cache} && ./build.sh && make install)
+    EOH
+  action :nothing
 end
