@@ -13,10 +13,8 @@ from source.
 
 # Attributes
 
-```
-[:the_silver_searcher][:version] = version number to install
-[:the_silver_searcher][:checksum] = checksum of tar.gz source for this version
-```
+* `[:the_silver_searcher][:version]` = version number to install
+* `[:the_silver_searcher][:checksum]` = checksum of tar.gz source for this version
 
 # Recipes
 
