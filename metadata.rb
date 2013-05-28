@@ -1,6 +1,6 @@
 name             "the_silver_searcher"
-maintainer       "TeamSnap"
-maintainer_email "hello@teamsnap.com"
+maintainer       "Mark Cornick"
+maintainer_email "mark@teamsnap.com"
 license          "MIT"
 description      "Installs/Configures The Silver Searcher"
 depends          "build-essential"

@@ -22,4 +22,4 @@ from source.
 
 # Author
 
-Author:: TeamSnap (<ops@teamsnap.com>)
+Author:: Mark Cornick (<mark@teamsnap.com>)
