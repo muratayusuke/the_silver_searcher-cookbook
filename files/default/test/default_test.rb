@@ -1,4 +1,4 @@
-require File.expand_path('../support/helpers', __FILE__)
+require File.expand_path('../spec_helper', __FILE__)
 
 describe 'the_silver_searcher::default' do
 
