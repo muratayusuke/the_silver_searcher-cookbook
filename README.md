@@ -19,7 +19,7 @@ Include `recipe[the_silver_searcher]` in a run list.
 
 # Recipes
 
-* default - installs The Silver Searcher to /usr/local/bin/ag
+* default - installs The Silver Searcher to `/usr/local/bin/ag`
 
 # Author
 
