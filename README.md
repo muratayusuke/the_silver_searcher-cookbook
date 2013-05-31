@@ -5,11 +5,12 @@ from source.
 
 # Requirements
 
-* only debian and redhat platform families are supported
+Requires the `build_essential` cookbook. This cookbook only supports Debian
+and Red Hat platform families at this time.
 
 # Usage
 
-`include_recipe "the_silver_searcher"`
+Include `recipe[the_silver_searcher]` in a run list.
 
 # Attributes
 
@@ -18,7 +19,7 @@ from source.
 
 # Recipes
 
-* default - installs The Silver Searcher
+* default - installs The Silver Searcher to /usr/local/bin/ag
 
 # Author
 
