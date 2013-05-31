@@ -5,6 +5,8 @@ when "debian"
   prereqs = %w(automake pkg-config zlib1g-dev libpcre3-dev)
 when "rhel"
   prereqs = %w(automake pkgconfig zlib zlib-devel pcre pcre-devel)
+when "suse"
+  prereqs = %w(automake pkg-config zlib zlib-devel pcre pcre-devel)
 else
   Chef::Log.warn "Don't know prereqs for #{node.platform_family}; proceeding anyway"
   prereqs = []
