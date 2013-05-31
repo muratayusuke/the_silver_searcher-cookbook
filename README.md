@@ -5,8 +5,8 @@ from source.
 
 # Requirements
 
-Requires the `build_essential` cookbook. This cookbook only supports Debian
-and Red Hat platform families at this time.
+Requires the `build_essential` cookbook. This cookbook only supports Debian,
+Red Hat and SUSE platform families at this time.
 
 # Usage
 
