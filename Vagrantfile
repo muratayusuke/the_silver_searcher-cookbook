@@ -82,7 +82,6 @@ Vagrant.configure("2") do |config|
     }
 
     chef.run_list = [
-        "recipe[minitest-handler::default]",
         "recipe[the_silver_searcher::default]"
     ]
   end

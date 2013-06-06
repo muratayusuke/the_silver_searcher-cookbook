@@ -1,0 +1,27 @@
+---
+driver_plugin: vagrant
+driver_config:
+  require_chef_omnibus: true
+
+platforms:
+- name: ubuntu-12.04
+  driver_config:
+    box: opscode_ubuntu-12.04_provisionerless
+    box_url: https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04_provisionerless.box
+- name: ubuntu-10.04
+  driver_config:
+    box: opscode_ubuntu-10.04_provisionerless
+    box_url: https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-10.04_provisionerless.box
+- name: centos-6.4
+  driver_config:
+    box: opscode_centos-6.4_provisionerless
+    box_url: https://opscode-vm.s3.amazonaws.com/vagrant/opscode_centos-6.4_provisionerless.box
+- name: centos-5.9
+  driver_config:
+    box: opscode_centos-5.9_provisionerless
+    box_url: https://opscode-vm.s3.amazonaws.com/vagrant/opscode_centos-5.9_provisionerless.box
+
+suites:
+- name: default
+  run_list: ["recipe[the_silver_searcher]"]
+  attributes: {}
