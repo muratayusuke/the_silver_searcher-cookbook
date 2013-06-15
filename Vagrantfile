@@ -71,6 +71,7 @@ Vagrant.configure("2") do |config|
   # config.berkshelf.except = []
 
   config.omnibus.chef_version = :latest
+  config.cache.auto_detect = true
 
   config.vm.provision :chef_solo do |chef|
     chef.json = {
