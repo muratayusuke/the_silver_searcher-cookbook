@@ -1,0 +1,7 @@
+[
+  "nugrant",
+  "vagrant-berkshelf",
+  "vagrant-cachier",
+  "vagrant-chef-zero",
+  "vagrant-omnibus"
+]
