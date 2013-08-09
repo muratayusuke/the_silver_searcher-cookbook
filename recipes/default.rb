@@ -2,11 +2,11 @@ include_recipe "build-essential"
 
 case node.platform_family
 when "debian"
-  prereqs = %w(automake pkg-config zlib1g-dev libpcre3-dev)
+  prereqs = %w(automake pkg-config zlib1g-dev libpcre3-dev liblzma-dev)
 when "rhel"
-  prereqs = %w(automake pkgconfig zlib zlib-devel pcre pcre-devel)
+  prereqs = %w(automake pkgconfig zlib zlib-devel pcre pcre-devel xz xz-devel)
 when "suse"
-  prereqs = %w(automake pkg-config zlib zlib-devel pcre pcre-devel)
+  prereqs = %w(automake pkg-config zlib zlib-devel pcre pcre-devel xz xz-devel)
 else
   Chef::Log.warn "Don't know prereqs for #{node.platform_family}; proceeding anyway"
   prereqs = []
