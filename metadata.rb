@@ -4,9 +4,9 @@ maintainer_email "mark@teamsnap.com"
 license          "MIT"
 description      "Installs/Configures The Silver Searcher"
 depends          "build-essential"
-version          "1.2.0"
+version          "1.2.1"
 
 %w(debian ubuntu linuxmint raspbian redhat centos oracle scientific amazon
-   enterpriseenterprise suse).each do |platform|
+   enterpriseenterprise suse fedora).each do |platform|
   supports platform
 end
