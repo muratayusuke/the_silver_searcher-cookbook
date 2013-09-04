@@ -24,10 +24,6 @@ platforms:
   driver_config:
     box: opscode_fedora-19_provisionerless
     box_url: https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode-fedora-19_provisionerless.box
-- name: debian-7.1.0
-  driver_config:
-    box: opscode_debian-7.1.0_provisionerless
-    box_url: https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_debian-7.1.0_provisionerless.box
 
 suites:
 - name: default
