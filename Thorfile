@@ -5,9 +5,11 @@ require 'bundler/setup'
 require 'thor/foodcritic'
 require 'berkshelf/thor'
 
-begin
-  require 'kitchen/thor_tasks'
-  Kitchen::ThorTasks.new
-rescue LoadError
-  puts ">>>>> Kitchen gem not loaded, omitting tasks" unless ENV['CI']
+require 'kitchen/thor_tasks'
+Kitchen::ThorTasks.new
+
+require 'emeril/thor_tasks'
+Emeril::ThorTasks.new do |t|
+  t.config[:tag_prefix] = false
+  t.config[:category] = "Utilities"
 end
