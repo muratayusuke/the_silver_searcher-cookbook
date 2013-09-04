@@ -20,10 +20,10 @@ platforms:
   driver_config:
     box: opscode_centos-5.9_provisionerless
     box_url: https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_centos-5.9_provisionerless.box
-- name: fedora-18
+- name: fedora-19
   driver_config:
-    box: opscode_fedora-18_provisionerless
-    box_url: https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode-fedora-18_provisionerless.box
+    box: opscode_fedora-19_provisionerless
+    box_url: https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode-fedora-19_provisionerless.box
 - name: debian-7.1.0
   driver_config:
     box: opscode_debian-7.1.0_provisionerless
