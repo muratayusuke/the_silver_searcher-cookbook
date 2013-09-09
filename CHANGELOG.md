@@ -1,3 +1,7 @@
+## 1.2.3 / 2013-09-09
+
+* the_silver_searcher updated to version 0.16
+
 ## 1.2.2 / 2013-09-04
 
 * test on fedora 19 and ubuntu 13.04
