@@ -24,3 +24,7 @@ Include `recipe[the_silver_searcher]` in a run list.
 # Author
 
 Author:: Mark Cornick (<mark@teamsnap.com>)
+
+# Flair
+
+[![Build Status](https://secure.travis-ci.org/teamsnap/the_silver_searcher-cookbook.png)](http://travis-ci.org/teamsnap/the_silver_searcher-cookbook)
