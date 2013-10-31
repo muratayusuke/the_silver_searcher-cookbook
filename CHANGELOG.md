@@ -1,3 +1,7 @@
+## 1.2.4 / 2013-10-31
+
+* the_silver_searcher updated to version 0.18
+
 ## 1.2.3 / 2013-09-09
 
 * the_silver_searcher updated to version 0.16
