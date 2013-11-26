@@ -204,7 +204,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  berkshelf (>= 2.0.0)
+  berkshelf (~> 2.0.0)
   chefspec (~> 3.0.0)
   kitchen-vagrant
   test-kitchen (~> 1.0.0.beta.4)
