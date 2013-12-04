@@ -1,5 +1,7 @@
 ---
-driver: vagrant
+driver:
+  name: vagrant
+  vagrantfile_erb: Vagrantfile.erb
 
 provisioner:
   name: chef_solo
