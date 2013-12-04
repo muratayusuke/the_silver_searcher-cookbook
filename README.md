@@ -5,8 +5,13 @@ from source.
 
 # Requirements
 
-Requires the `build_essential` cookbook. This cookbook only supports Debian,
-Red Hat and SUSE platform families at this time.
+This cookbook supports Debian, Red Hat and SUSE platform families. It is
+tested on the most recent versions of CentOS 5 and 6, the most recent
+stable version of Debian, the most recent version of Fedora, the current
+and previous LTS versions of Ubuntu, and the most recent version of
+Ubuntu.
+
+The `build_essential` cookbook is the only other cookbook required.
 
 # Usage
 
