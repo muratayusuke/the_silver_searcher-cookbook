@@ -18,10 +18,10 @@ platforms:
   driver:
     box: opscode-debian-7.2.0
     box_url: http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_debian-7.2.0_chef-provisionerless.box
-- name: fedora-20
+- name: fedora-19
   driver:
-    box: opscode-fedora-20
-    box_url: http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_fedora-20_chef-provisionerless.box
+    box: opscode-fedora-19
+    box_url: http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_fedora-19_chef-provisionerless.box
 - name: ubuntu-10.04
   driver:
     box: opscode-ubuntu-10.04
