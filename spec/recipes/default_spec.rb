@@ -10,7 +10,8 @@ describe "the_silver_searcher::default" do
   end
 
   it "downloads and compiles the_silver_searcher" do
-    cache_file = "#{Chef::Config['file_cache_path']}/the_silver_searcher-#{chef_run.node.the_silver_searcher.version}.tar.gz"
+    version = chef_run.node.the_silver_searcher.version
+    cache_file = "#{Chef::Config['file_cache_path']}/the_silver_searcher-#{version}.tar.gz"
     expect(chef_run).to create_remote_file(cache_file)
     expect(chef_run.remote_file(cache_file)).to notify("bash[install the_silver_searcher]").to(:run)
   end
