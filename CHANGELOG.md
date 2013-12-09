@@ -1,3 +1,7 @@
+## 1.3.2 / 2013-12-09
+
+* the_silver_searcher updated to version 0.18.1
+
 ## 1.3.1 / 2013-12-09
 
 * SUSE support removed due to untestability
