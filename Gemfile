@@ -1,10 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'berkshelf', '~> 2.0.0'
-gem 'chef', '~> 11.8.0', :group => :integration
-gem 'emeril', :group => :integration
+gem 'chef', '~> 11.8.0'
 gem 'chefspec', '~> 3.0.0'
+gem 'emeril'
+gem 'guard-kitchen'
 gem 'thor-foodcritic'
-gem 'test-kitchen', '~> 1.0.0', :group => :integration
-gem 'kitchen-vagrant', '~> 0.13.0', :group => :integration
-gem 'guard-kitchen', :group => :integration
+
+group :integration do
+  gem 'kitchen-vagrant', '~> 0.13.0'
+  gem 'test-kitchen', '~> 1.0.0'
+end
