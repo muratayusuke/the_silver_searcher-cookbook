@@ -10,7 +10,5 @@ Kitchen::ThorTasks.new
 
 require 'emeril/thor_tasks'
 Emeril::ThorTasks.new do |t|
-  t.config[:tag_prefix] = false
   t.config[:category] = "Utilities"
 end
-
