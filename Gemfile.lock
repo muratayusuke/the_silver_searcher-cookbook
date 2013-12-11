@@ -251,6 +251,6 @@ DEPENDENCIES
   chefspec (~> 3.0.0)
   emeril
   guard-kitchen
-  kitchen-vagrant (~> 0.13.0)
+  kitchen-vagrant (>= 0.13.0)
   test-kitchen (~> 1.0.0)
   thor-foodcritic
