@@ -11,3 +11,4 @@ group :integration do
   gem 'kitchen-vagrant', '>= 0.13.0'
   gem 'test-kitchen', '~> 1.0.0'
 end
+gem 'json', '>= 1.4.4', '<=  1.7.7'
