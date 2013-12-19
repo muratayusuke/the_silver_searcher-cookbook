@@ -1,14 +1,15 @@
+include_recipe "chef-sugar"
 include_recipe "build-essential"
 
-case node.platform_family
-when "debian"
+if debian?
   prereqs = %w(automake pkg-config zlib1g-dev libpcre3-dev liblzma-dev)
-when "rhel", "fedora"
+elsif rhel? || fedora?
   prereqs = %w(automake pkgconfig zlib zlib-devel pcre pcre-devel xz xz-devel)
 else
   Chef::Log.warn "Don't know prereqs for #{node.platform_family}; proceeding anyway"
   prereqs = []
 end
+
 prereqs.each do |pkg|
   package pkg do
     action :install

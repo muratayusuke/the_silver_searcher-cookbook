@@ -4,7 +4,10 @@
       "path": "."
     },
     "build-essential": {
-      "locked_version": "1.4.0"
+      "locked_version": "1.4.2"
+    },
+    "chef-sugar": {
+      "locked_version": "1.1.0"
     }
   }
 }
