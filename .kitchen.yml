@@ -17,6 +17,18 @@ platforms:
 - name: ubuntu-13.10
 
 suites:
-- name: default
+- name: debianish
   run_list:
   - recipe[the_silver_searcher]
+  includes:
+    - debian-7.2.0
+    - ubuntu-10.04
+    - ubuntu-12.04
+    - ubuntu-13.10
+- name: redhattish
+  run_list:
+  - recipe[the_silver_searcher]
+  includes:
+    - centos-5.10
+    - centos-6.5
+    - fedora-19
