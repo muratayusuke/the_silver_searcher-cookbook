@@ -209,8 +209,14 @@ GEM
       nokogiri (>= 1.4.0)
       nori (~> 1.0)
       wasabi (~> 1.0)
+    serverspec (0.13.1)
+      highline
+      net-ssh
+      rspec (>= 2.13.0)
+      specinfra (>= 0.0.6)
     slop (3.4.7)
     solve (0.8.2)
+    specinfra (0.0.6)
     systemu (2.5.2)
     test-kitchen (1.0.0)
       mixlib-shellout (~> 1.2)
@@ -253,5 +259,6 @@ DEPENDENCIES
   guard-kitchen
   json (>= 1.4.4, <= 1.7.7)
   kitchen-vagrant (>= 0.13.0)
+  serverspec
   test-kitchen (~> 1.0.0)
   thor-foodcritic
