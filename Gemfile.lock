@@ -219,7 +219,7 @@ GEM
     solve (0.8.2)
     specinfra (0.1.1)
     systemu (2.5.2)
-    test-kitchen (1.0.0)
+    test-kitchen (1.1.1)
       mixlib-shellout (~> 1.2)
       net-scp (~> 1.1)
       net-ssh (~> 2.7)
@@ -263,5 +263,5 @@ DEPENDENCIES
   json (>= 1.4.4, <= 1.7.7)
   kitchen-vagrant (~> 0.14.0)
   serverspec
-  test-kitchen (~> 1.0.0)
+  test-kitchen (~> 1.1.0)
   thor-foodcritic

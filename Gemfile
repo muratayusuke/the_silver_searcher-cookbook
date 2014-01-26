@@ -12,5 +12,5 @@ gem 'thor-foodcritic'
 group :integration do
   gem 'kitchen-vagrant', '~> 0.14.0'
   gem 'serverspec'
-  gem 'test-kitchen', '~> 1.0.0'
+  gem 'test-kitchen', '~> 1.1.0'
 end
