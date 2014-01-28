@@ -1,6 +1,10 @@
 the_silver_searcher
 ===================
 
+v1.3.4 (2014-01-28)
+-------------------
+- skipped due to me misunderstanding stove docs
+
 v1.3.3 (2014-01-28)
 -------------------
 - switching to stove for releases
