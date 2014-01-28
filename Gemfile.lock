@@ -226,9 +226,6 @@ GEM
       safe_yaml (~> 0.9)
       thor (~> 0.18)
     thor (0.18.1)
-    thor-foodcritic (1.1.0)
-      foodcritic (~> 3.0)
-      thor
     timers (2.0.0)
       hitimes
     treetop (1.4.15)
@@ -264,4 +261,3 @@ DEPENDENCIES
   kitchen-vagrant (~> 0.14.0)
   serverspec
   test-kitchen (~> 1.1.0)
-  thor-foodcritic

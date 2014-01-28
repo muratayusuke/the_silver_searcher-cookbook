@@ -7,7 +7,6 @@ gem 'emeril'
 gem 'foodcritic', '~> 3.0.0'
 gem 'guard-kitchen'
 gem 'json', '>= 1.4.4', '<=  1.7.7'
-gem 'thor-foodcritic'
 
 group :integration do
   gem 'kitchen-vagrant', '~> 0.14.0'
