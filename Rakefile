@@ -15,7 +15,7 @@ require 'stove/rake_task'
 
 Stove::RakeTask.new do |stove|
   stove.bump = true
-  stove.changelog = false
+  stove.changelog = true
   stove.dev = false
   stove.upload = true
   stove.community = true
