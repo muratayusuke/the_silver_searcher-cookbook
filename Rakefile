@@ -11,6 +11,19 @@ end
 
 task :default => 'foodcritic'
 
+require 'stove/rake_task'
+
+Stove::RakeTask.new do |stove|
+  stove.bump = true
+  stove.changelog = false
+  stove.dev = false
+  stove.upload = true
+  stove.community = true
+  stove.git = true
+  stove.github = true
+  stove.jira = false
+end
+
 private
 
 def prepare_foodcritic_sandbox(sandbox)
