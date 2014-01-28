@@ -4,4 +4,4 @@ gemfile:
 rvm:
   - 2.0.0
   - 1.9.3
-script: bundle exec rake foodcritic
+script: bundle install && bundle exec rake foodcritic
