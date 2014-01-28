@@ -1,6 +1,12 @@
 the_silver_searcher
 ===================
 
+v1.3.5 (2014-01-28)
+-------------------
+
+Fixing a few issues resulting from adding stove
+
+
 v1.3.4 (2014-01-28)
 -------------------
 - skipped due to me misunderstanding stove docs
