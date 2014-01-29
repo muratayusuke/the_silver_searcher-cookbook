@@ -1,2 +1,2 @@
-default.the_silver_searcher.version = "0.18.1"
-default.the_silver_searcher.checksum = "1f5cdacf955d5707cdb60f3f46aab3aae7fe96f105f00ab2d6a5a52d0aad5dc5"
+default.the_silver_searcher.version = "0.19.1"
+default.the_silver_searcher.checksum = "698cde7a8170ef1623f594d251aac846e720dc257c170f9c21102b3f2f1d4448"
