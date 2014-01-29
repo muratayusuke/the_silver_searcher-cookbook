@@ -11,7 +11,7 @@ platforms:
 - name: centos-5.10
 - name: centos-6.5
 - name: debian-7.2.0
-- name: fedora-19
+- name: fedora-20
 - name: ubuntu-10.04
 - name: ubuntu-12.04
 - name: ubuntu-13.10
@@ -31,4 +31,4 @@ suites:
   includes:
     - centos-5.10
     - centos-6.5
-    - fedora-19
+    - fedora-20
