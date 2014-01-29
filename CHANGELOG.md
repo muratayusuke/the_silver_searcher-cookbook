@@ -1,6 +1,13 @@
 the_silver_searcher
 ===================
 
+v1.3.6 (2014-01-29)
+-------------------
+
+- the_silver_searcher updated to version 0.19.1
+- test on Fedora 20
+
+
 v1.3.5 (2014-01-28)
 -------------------
 
