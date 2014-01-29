@@ -268,7 +268,6 @@ PLATFORMS
 
 DEPENDENCIES
   berkshelf (~> 2.0.0)
-  chef (~> 11.8.0)
   chefspec (~> 3.0.0)
   foodcritic (~> 3.0.0)
   guard-kitchen
