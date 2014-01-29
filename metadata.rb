@@ -5,7 +5,7 @@ license          "MIT"
 description      "Installs/Configures The Silver Searcher"
 depends          "build-essential"
 depends          "chef-sugar"
-version          "1.3.5"
+version          "1.3.6"
 
 %w(debian ubuntu linuxmint raspbian redhat centos oracle scientific amazon
    enterpriseenterprise fedora).each do |platform|
