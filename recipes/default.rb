@@ -28,8 +28,8 @@ bash "install the_silver_searcher" do
   user "root"
   cwd Chef::Config['file_cache_path']
   code <<-EOH
-      tar -zxf #{cache}.tar.gz
-      (cd #{cache} && ./build.sh && make install)
-    EOH
+    tar -zxf #{cache}.tar.gz
+    (cd #{cache} && ./build.sh && make install)
+  EOH
   action :nothing
 end
