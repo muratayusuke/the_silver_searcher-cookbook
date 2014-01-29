@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'berkshelf', '~> 2.0.0'
-gem 'chefspec', '~> 3.0.0'
+gem 'chefspec', '~> 3.1.0'
 gem 'stove', '~> 2.0.0.beta.2'
 gem 'foodcritic', '~> 3.0.0'
 gem 'guard-kitchen'
