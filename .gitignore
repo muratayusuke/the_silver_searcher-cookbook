@@ -17,3 +17,4 @@ bin/*
 /tmp
 test/support
 .coverage
+vendor
