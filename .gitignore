@@ -18,3 +18,5 @@ bin/*
 test/support
 .coverage
 vendor
+Berksfile.lock
+Gemfile.lock
