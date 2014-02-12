@@ -19,9 +19,7 @@ end
 cache = "the_silver_searcher-#{node.the_silver_searcher.version}"
 
 remote_file "#{Chef::Config['file_cache_path']}/#{cache}.tar.gz" do
-  # rubocop:disable LineLength
   source "https://github.com/ggreer/the_silver_searcher/archive/#{node.the_silver_searcher.version}.tar.gz"
-  # rubocop:enable LineLength
   checksum node.the_silver_searcher.checksum
   notifies :run, 'bash[install ag]', :immediately
 end

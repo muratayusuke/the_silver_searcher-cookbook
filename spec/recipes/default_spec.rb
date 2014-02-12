@@ -17,11 +17,9 @@ describe 'the_silver_searcher::default' do
 
   it 'downloads and compiles the_silver_searcher' do
     version = chef_run.node.the_silver_searcher.version
-    # rubocop:disable LineLength
     cache_file = "#{Chef::Config["file_cache_path"]}/the_silver_searcher-#{version}.tar.gz"
     expect(chef_run).to create_remote_file(cache_file)
     expect(chef_run.remote_file(cache_file)).to notify('bash[install ag]').to(:run)
-    # rubocop:enable LineLength
     # NOTE: the default action on bash[install ag] is :nothing;
     #       hence chefspec will not run it, and we spec as such
     expect(chef_run).not_to run_bash('install ag')
