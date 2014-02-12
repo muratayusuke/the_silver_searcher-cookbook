@@ -1,12 +1,12 @@
-include_recipe "chef-sugar"
-include_recipe "build-essential"
+include_recipe 'chef-sugar'
+include_recipe 'build-essential'
 
 if debian?
   prereqs = %w(automake pkg-config zlib1g-dev libpcre3-dev liblzma-dev)
 elsif rhel? || fedora?
   prereqs = %w(automake pkgconfig zlib zlib-devel pcre pcre-devel xz xz-devel)
 else
-  Chef::Log.warn "Don't know prereqs for #{node.platform_family}; proceeding anyway"
+  log "Don't know prereqs for #{node.platform_family}; proceeding anyway"
   prereqs = []
 end
 
@@ -19,13 +19,15 @@ end
 cache = "the_silver_searcher-#{node.the_silver_searcher.version}"
 
 remote_file "#{Chef::Config['file_cache_path']}/#{cache}.tar.gz" do
+  # rubocop:disable LineLength
   source "https://github.com/ggreer/the_silver_searcher/archive/#{node.the_silver_searcher.version}.tar.gz"
+  # rubocop:enable LineLength
   checksum node.the_silver_searcher.checksum
-  notifies :run, "bash[install the_silver_searcher]", :immediately
+  notifies :run, 'bash[install ag]', :immediately
 end
 
-bash "install the_silver_searcher" do
-  user "root"
+bash 'install ag' do
+  user 'root'
   cwd Chef::Config['file_cache_path']
   code <<-EOH
     tar -zxf #{cache}.tar.gz
