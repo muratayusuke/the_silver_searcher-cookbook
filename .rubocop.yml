@@ -14,3 +14,6 @@ LineLength:
 
 HashSyntax:
   EnforcedStyle: hash_rockets
+
+NumericLiterals:
+  Enabled: false
