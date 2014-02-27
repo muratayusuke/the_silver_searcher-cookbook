@@ -10,7 +10,7 @@ provisioner:
 platforms:
 - name: centos-5.10
 - name: centos-6.5
-- name: debian-7.2.0
+- name: debian-7.4
 - name: fedora-20
 - name: ubuntu-10.04
 - name: ubuntu-12.04
@@ -21,7 +21,7 @@ suites:
   run_list:
   - recipe[the_silver_searcher]
   includes:
-    - debian-7.2.0
+    - debian-7.4
     - ubuntu-10.04
     - ubuntu-12.04
     - ubuntu-13.10
