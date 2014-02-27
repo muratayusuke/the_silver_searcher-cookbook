@@ -20,3 +20,4 @@ test/support
 vendor
 Berksfile.lock
 Gemfile.lock
+.ruby-version
