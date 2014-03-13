@@ -21,6 +21,7 @@ Include `recipe[the_silver_searcher]` in a run list.
 
 * `[:the_silver_searcher][:version]` = version number to install
 * `[:the_silver_searcher][:checksum]` = checksum of tar.gz source for this version
+* `[:the_silver_searcher][:url]` = url of tar.gz source
 
 # Recipes
 
