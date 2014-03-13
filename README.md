@@ -36,7 +36,3 @@ Author:: Mark Cornick (<mark@teamsnap.com>)
 Thanks to:
 
 * Yusuke Murata (muratayusuke)
-
-# Flair
-
-[![Build Status](https://secure.travis-ci.org/teamsnap/the_silver_searcher-cookbook.png)](http://travis-ci.org/teamsnap/the_silver_searcher-cookbook)
