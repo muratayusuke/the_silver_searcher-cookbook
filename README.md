@@ -35,7 +35,7 @@ Author:: Mark Cornick (<mark@teamsnap.com>)
 
 Thanks to:
 
-* Yusuke Murata (muratayuske)
+* Yusuke Murata (muratayusuke)
 
 # Flair
 
